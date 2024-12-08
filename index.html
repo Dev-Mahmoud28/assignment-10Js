@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="d-flex justify-content-center align-items-center vh-100">
+    <div class="container">
+      <div class="box w-50 m-auto d-flex flex-column p-2 rounded">
+        <h2 class="text-white text-center my-3 fw-bold">Login System</h2>
+        <input
+          class="d-block w-75 m-auto mb-3 p-1"
+          type="email"
+          id="email"
+          placeholder="Enter Your Email"
+        />
+        <div class="password mb-3 position-relative">
+            <input
+              class="d-block w-75 m-auto p-1"
+              type="password"
+              id="password"
+              placeholder="Enter Your Password"
+            />
+            <i id="eyeIcon" onclick="showPass()" class="fa-solid fa-eye-slash eye position-absolute"></i>
+        </div>
+        <p id="success" class="text-center text-success fw-bold d-none">
+          Success
+        </p>
+        <p id="warning" class="text-center text-warning fw-bold d-none">
+          Email or Password is incorrect
+        </p>
+        <p id="fillMsg" class="text-center text-black d-none">
+          All Inputs Must be Filled !
+        </p>
+        <button
+          onclick="login()"
+          class="btn btn-primary d-inline-block w-25 m-auto"
+        >
+          Login
+        </button>
+        <p class="text-white signUp text-center mt-3">
+          You Don't Have Account ? <span id="signUp">Sign Up</span>
+        </p>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
